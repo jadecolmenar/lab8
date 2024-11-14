@@ -1,0 +1,151 @@
+main {
+    flex: 1; /* This makes the main area grow to fill available space */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #f8f9fa;
+}
+nav a {
+    margin-right: 20px; /* Adds space to the right of each link */
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-size: cover;
+    color: black;
+  }
+  /* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+    padding: 10px 0; /* Reduces padding to make footer smaller */
+    font-size: 0.9em; /* Adjusts font size */
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 10px; /* Controls spacing between icons */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul a svg {
+    width: 20px; /* Reduces icon size */
+    height: 20px;
+    color: black;
+}
+
+footer p {
+    margin: 5px 0; /* Minimizes spacing around paragraphs */
+    font-size: 0.8em; /* Smaller font size */
+}
+
+footer ul a p {
+    font-size: 0.7em; /* Even smaller font for icon labels */
+    margin: 2px 0 0;
+}
+
+
+.nav-link{
+    color: black;
+}
+.container {
+    width: 100%;  /* Instead of fixed width like 600px */
+  }
+.typed-out{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end) forwards;
+  width: 0;
+  display: inline;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+
+/* Full page height and centering */
+.full-page {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Ensuring responsiveness */
+.container-xxl, .container-fluid {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.intro-wrap {
+    width: 100%;
+}
+
+/* Responsive font sizes */
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+.paragraph-light {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Ensures text wraps nicely on smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .paragraph-light {
+        font-size: 1em;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.profile-pic {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circular area without distortion */
+    border: 3px solid #4289fc00; /* Optional border for styling */
+    margin-bottom: 20px; /* Adjust to space the image from other elements */
+    justify-content: center;
+}
+
+.image-section img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
